@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css"
+import Main from './Main';
 
 
 
@@ -42,9 +43,9 @@ export default class login extends Component {
         console.log(this);
         console.log(this.state.email, this.state.password);
 
-        axios.post('http://localhost:3002/app/login' , regester)
+        axios.post('http://localhost:3004/app/login' , regester)
         .then(data => console.log(data.data))
-        .catch(e=> {console.log(e)})
+        .catch(e=> {alert('User Not Found')})
         this.setState({
 
           email: "",
@@ -76,7 +77,6 @@ export default class login extends Component {
 
                             <input type='submit' className="btn btn-danger btn-block" value='Submit' />
                         </form>
-
 
                     </div>
 

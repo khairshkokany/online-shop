@@ -54,9 +54,9 @@ export default class Signup extends Component {
         }
     
     
-        axios.post('http://localhost:3002/app/signup' , regester)
+        axios.post('http://localhost:3004/app/signup' , regester)
         .then(data => console.log(data.data))
-        .catch(error => console.error(error))
+        .catch(e=> {alert('User Already Exists')})
         this.setState({
           username : "",
           email: "",
@@ -72,6 +72,7 @@ export default class Signup extends Component {
     <>
             <div className="container">
               <div className="form-div">
+              
                 <form onSubmit={this.onSubmit}>
                   <input type='text'
                   placeholder = 'username'
@@ -98,7 +99,16 @@ export default class Signup extends Component {
                   className="form-control form-group"/>
                   
                  
-                 
+                  <Link to="/signup">
+                <Button
+                  type
+                  variant="outline-primary"
+                  size="lg"
+                  className="landingbutton"
+                >
+                  Signup
+                </Button>
+              </Link>
                  
                   <Button  type='submit' className="btn btn-danger btn-block" value='Submit' >
 

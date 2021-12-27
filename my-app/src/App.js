@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Signup from "./Signup";
 import Login from "./Login"
-import LandingPage from "./landingPage";
+import LandingPage from "./LandingPage";
 import Main from './Main';
 const App = () => (
 
@@ -16,7 +16,7 @@ const App = () => (
       <>
         <BrowserRouter>
             <main>
-            <Route path="/app" component={LandingPage} exact/>
+            <Route path="/" component={LandingPage} exact/>
 
             <Route path="/signup" component={Signup} exact/>
 
