@@ -9,6 +9,8 @@ import Signup from "./Signup";
 import Login from "./Login"
 import LandingPage from "./LandingPage";
 import Main from './Main';
+import Seller from './Seller'
+import Type from './Type'
 const App = () => (
 
 
@@ -19,6 +21,8 @@ const App = () => (
             <Route path="/" component={LandingPage} exact/>
 
             <Route path="/signup" component={Signup} exact/>
+            <Route path="/seller" component={Seller} exact/>
+            <Route path="/type" component={Type} exact/>
 
 
             <Route path="/login" component={Login} exact/>

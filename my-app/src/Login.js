@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css"
-import Main from './Main';
 
 
 
@@ -59,7 +58,7 @@ export default class login extends Component {
             <>
                 <div className="container">
                     <div className="form-div">
-                        <form onSubmit={this.handleSubmit}>
+                        <form onSubmit={this.handleSubmit} action='/type'>
 
                             <input type='text'
                                 placeholder='email'

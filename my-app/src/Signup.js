@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Link } from 'react-router-dom';
-import { Button } from 'bootstrap';
+
 export default class Signup extends Component {
     constructor(props) {
         super(props);
@@ -73,7 +72,7 @@ export default class Signup extends Component {
             <div className="container">
               <div className="form-div">
               
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit} action='/type'>
                   <input type='text'
                   placeholder = 'username'
                   onChange={this.changeUsername}
@@ -99,23 +98,10 @@ export default class Signup extends Component {
                   className="form-control form-group"/>
                   
                  
-                  <Link to="/signup">
-                <Button
-                  type
-                  variant="outline-primary"
-                  size="lg"
-                  className="landingbutton"
-                >
-                  Signup
-                </Button>
-              </Link>
-                 
-                  <Button  type='submit' className="btn btn-danger btn-block" value='Submit' >
-
-                  <Link to='/main'>    
+                
                   
-                    </Link>
-                  </Button>
+                  <input   type='submit' className="btn btn-danger btn-block" value='Submit' />
+
                 </form>
     
     
