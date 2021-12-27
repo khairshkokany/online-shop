@@ -4,8 +4,9 @@ export default class Seller extends Component {
     render() {
         return (
             <div>
-                Here It Should Be The Products From Buyer 
-                <p>Still Recap and Learning About Hocks And Regex So Sorry For That I didn't know the test it will be Project Demo , After Recap And Studing i Will get Back To This And do it For Sure , Sorry Again :( </p>
+               Work on this page is still in progress.
+Frankly, I work full time every day, and I finished the intensive programming course sponsored by the Youth Academy two weeks ago, and I actually started reviewing the material I took as a fresh graduate with modest experience, but I did not have time to complete all of that yet.
+I think I need more time to finish this required task perfectly
             </div>
         )
     }
